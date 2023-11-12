@@ -4,15 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Voice Set Recorder Tool - Train an AI model with your voice by recording 10-second voice sets. Free open source tool to help you train your own AI model. Record 3 sentences, add them to a set, and export clips by downloading them via zip. Created by [Your Name]">
     <meta name="author" content="Martin mbouldo.com">
     <meta name="keywords" content="voice set recorder, AI model training, open source tool, voice recording">
-    
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,29 +25,16 @@
         rel="stylesheet">
     <title>Voice Set Recorder | mbouldo.com</title>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
 
-        .sidebar {
-            background: #F2F4F6;
-        }
-
-        .jetbrains {
-            font-family: 'JetBrains Mono', monospace;
-        }
     </style>
 </head>
 
-<body class="font-sans bg-white text-gray-700">
+<body class="bg-white text-gray-700 font-roboto">
     <div class="max-w-screen-2xl mx-auto border">
-
         <div class="flex flex-col h-screen ">
-
             <div class="flex grow">
                 <!-- Sidebar -->
-                <div class="sidebar  w-[350px]  border-r ">
-
+                <div class="bg-subgray  w-[350px]  border-r ">
                     <!-- Sidebar content goes here -->
                     <div class="h-24 w-full flex items-center border-b border-b-gray-200">
                         <a href="https://mbouldo.com/voice-set-recorder">
@@ -170,14 +154,12 @@
                                             <span class="font-semibold not-italic">Note:</span> You can use the <span class="font-semibold">spacebar </span> to cycle between recordings!
                                         </span>
                                 </p>
-                                <h3 class="jetbrains text-2xl" id="timer">
+                                <h3 class="font-jetbrains text-2xl" id="timer">
                                     0.00s
                                 </h3>
                             </div>
                             <div class=" flex justify-center my-12">
-
-
-                                <div class=" flex flex-col w-[850px] h-[250px] jetbrains text-3xl space-y-5 tracking-wider"
+                                <div class=" flex flex-col w-[850px] h-[250px] font-jetbrains text-3xl space-y-5 tracking-wider"
                                     id="prompts">
                                     <p class="">
                                         The birch canoe slid on the smooth planks.
@@ -225,7 +207,7 @@
 
                 </div>
             </div>
-            <div class="flex h-16 bg-[#F2F4F6] items-center justify-center">
+            <div class="flex h-16 bg-subgray items-center justify-center">
                 <div class="text-sm text-gray-500">
                     <span class="mr-2">&copy; <span id="year"></span> mbouldo.com Voice Set Recorder v1.0.0 </span>
                     |

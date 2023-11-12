@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    background: #F2F4F6;
+}
+
+.jetbrains {
+    font-family: 'JetBrains Mono', monospace;
+}
